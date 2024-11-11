@@ -123,6 +123,10 @@ class ShoppingCart {
 
     currentProductCount > 1 
       ? currentProductCountSpan.textContent = `${currentProductCount}x`
-      : undefined;
+      : productsContainer.innerHTML += `
+      <div id="dessert${id}" class="product">
+
+      </div>
+      `;
   }
 };
