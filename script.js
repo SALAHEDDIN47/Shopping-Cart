@@ -146,11 +146,13 @@ class ShoppingCart {
     const isCartCleared = confirm(
       "Are you sure you want to clear all items from your shopping cart?"
     );
-    if(isCartCleared){
+
+    if (isCartCleared) {
       this.items = [];
       this.total = 0;
+      productsContainer.innerHTML = "";
+      
     }
-
   }
 
   calculateTaxes(amount) {
