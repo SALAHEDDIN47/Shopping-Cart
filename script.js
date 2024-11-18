@@ -83,7 +83,7 @@ const products = [
     price: 12.99,
     category: "Cupcake",
   },
-];
+]; //creating a flexible list of product
 
 products.forEach(
   ({ name, id, price, category }) => {
@@ -99,7 +99,7 @@ products.forEach(
       </div>
     `;
   }
-);
+);// adding product to the body of the dessert-card-container
 
 class ShoppingCart {
   constructor() {
