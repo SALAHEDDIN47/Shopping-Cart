@@ -106,7 +106,7 @@ class ShoppingCart {
     this.items = [];
     this.total = 0;
     this.taxRate = 8.25;
-  }
+  }//Declaring the constructor
 
   addItem(id, products) {
     const product = products.find((item) => item.id === id);
